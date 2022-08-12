@@ -5,55 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            My Top Movies
+            My Top Movies List
         </title>
     </head>
     <body>
         <header>
-            <p>
-                My Top Movies
-            </p>
             <nav>
+            <details open>
+                <summary>
+                    Mi top 5 mejores películas
+                </summary>
+                    <ol>
+                        <li>
+                            <a href="#parasite">Parasite</a> 
+                        </li>
+                        <li>
+                            <a href="#gran-torino">Gran Torino</a> 
+                        </li>
+                        <li>
+                            <a href="#viaje-de-chihiro">Viaje de Chihiro</a> 
+                        </li>
+                        <li>
+                            <a href="#one-flew-over-the-cuckoo's-nest">One Flew Over the Cuckoo's Nest</a>
+                        </li>
+                        <li>
+                            <a href="#retablo">Retablo</a>
+                        </li>
+                    </ol>
+                </details>
+            </nav>    
+                 
 
-                <ol>
-                    <li>
-                        <a href="#parasite">Parasite</a> 
-                    </li>
-                    <li>
-                        <a href="#gran-torino">Gran Torino</a> 
-                    </li>
-                    <li>
-                        <a href="#viaje-de-chihiro">Viaje de Chihiro</a> 
-                    </li>
-                    <li>
-                        <a href="#one-flew-over-the-cuckoo's-nest">One Flew Over the Cuckoo's Nest</a>
-                    </li>
-                    <li>
-                        <a href="#retablo">Retablo</a>
-                    </li>
-                </ol>
-                <p>
-                    Sobre los Directores
-                </p>
-                <ol>
-                    <li>
-                        <a href="#bong-joon-ho">Bong Joon-ho</a> 
-                    </li>
-                    <li>
-                        <a href="#clint-eastwood">Clint Eastwood</a>   
-                    </li>
-                    <li>
-                        <a href="#hayao-miyazaki">Hayao Miyazaki</a> 
-                    </li>
-                    <li>
-                        <a href="#milos-forman">Miloš Forman</a>
-                    </li>
-                    <li>
-                        <a href="#alvaro-delgado-aparicio-labarthe">Álvaro Delgado-Aparicio</a>
-                    </li>
-                </ol>
+            <nav>
+                <details>
+                    <summary>
+                        
+                        Sobre los Directores
+                        
+                    </summary>
+                        <ol>
+                            <li>
+                                <a href="#bong-joon-ho">Bong Joon-ho</a> 
+                            </li>
+                            <li>
+                                <a href="#clint-eastwood">Clint Eastwood</a>   
+                            </li>
+                            <li>
+                                <a href="#hayao-miyazaki">Hayao Miyazaki</a> 
+                            </li>
+                            <li>
+                                <a href="#milos-forman">Miloš Forman</a>
+                            </li>
+                            <li>
+                                <a href="#alvaro-delgado-aparicio-labarthe">Álvaro Delgado-Aparicio</a>
+                            </li>
+                        </ol>
+                </details>
             </nav>
         </header>
+
+        <script>
+            const $detailsList = document.querySelectorAll('details')
+            $detailsList.forEach(($details) => {
+                $details.querySelector('summary').addEventListener('click', expand)
+            })
+
+            function expand(){
+                $detailsList.forEach(($details) => {
+                    $details.removeAttribute('open')
+                })
+            }
+        </script>
+        
         <h1>
            Las Películas que han marcado mi vida 
         </h1>
@@ -64,7 +87,7 @@
             Hola, mi nombre es Héctor y en esta página voy a recomendarte las películas que más he disfrutado y de las cuales he aprendido mucho.
         </p>
         <h2>
-            My top movies
+            Mi top 5 mejores películas
         </h2>
         <h3 id="parasite">
             Parasite
@@ -221,7 +244,7 @@
                     <br><li>Retablo</li>
                     <img src="https://deunsilencioajeno.lamula.pe/media/uploads/6846a339-d2f0-4180-988b-238c203496c5.jpg" alt="Frame de Retablo" title="Frame de Retablo" width="524" height="280" >
             </ul>
-        <h4>Los archivos multimedia han sido tomadas de los siguientes Websites:</h4> 
+        <h4>Los archivos multimedia y Sinopsis han sido tomadas de los siguientes Websites:</h4> 
         <p>
             <ul>
                 <li>
@@ -229,6 +252,24 @@
                 </li>
                 <li>
                     <a href="https://www.festivaldelima.com/" target="_blank">Festival de Lima</a>
+                </li>
+                <Li>
+                    <a href="https://www.harpersbazaar.com/celebrity/latest/a38855350/parasite-director-bong-joon-ho-next-film/" target="_blank">Bazaar</a>
+                </Li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Retablo_%28film%29" target="_blank"> Wikipedia</a>
+                </li>
+                <li>
+                    <a href="http://habanafilmfestival.com/filme/retablo/" target="_blank">Habana Film Festival</a>
+                </li>
+                <li>
+                    <a href="https://www.filmaffinity.com/es/film520465.html" target="_blank">Filmaffinity</a>
+                </li>
+                <li>
+                    <a href="https://es.wikipedia.org/wiki/Bong_Joon-ho" target="_blank">Wikipedia</a>
+                </li>
+                <li>
+                    <a href="https://www.imdb.com/title/tt1205489/?ref_=ttls_li_i" target="_blank">IMDb</a>
                 </li>
             </ul>
         </p>    
