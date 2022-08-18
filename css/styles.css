@@ -1,5 +1,6 @@
 :root {
     font-size: 18px;
+    --gray1: #fff9f0; 
     --gray10: #ffe3b8;
     --gray20: #eed4acfc;
     --gray30: #494949;
@@ -8,7 +9,7 @@
 }
 
 body {
-    color: var(--gray);
+    color: var(--gray1);
     background-color: var(--gray40);
     font-family: 'Roboto', sans-serif;
 }
@@ -79,7 +80,3 @@ summary {
     background: var(--gray10);
 }
 
-
-/* h3::after {
-    
-} */
