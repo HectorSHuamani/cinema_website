@@ -1,10 +1,10 @@
 :root {
     font-size: 18px;
-    --gray10: #fff3c9;
-    --gray20: #d8d4cf;
+    --gray10: #ffe3b8;
+    --gray20: #eed4acfc;
     --gray30: #494949;
     --gray40: #181a1b;
-    --yellow40: #f5c518; 
+    --orange30: #FF9900; 
 }
 
 body {
@@ -45,7 +45,9 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    color: var(--orange30);
 }
+
 footer {
     font-size: 14px;
     color: var(--gray);
@@ -61,14 +63,23 @@ footer a:hover {
 }
 
 summary {
-    color: var(--yellow40)
+    color: var(--orange30)
 }
 
 .hero {
     height: 350px;
-    background-image: linear-gradient(to top,rgb(255, 255, 220), transparent), url('../images/steven-spielberg-wallpaper.jpg');
+    background-image: linear-gradient(to top,rgb(0, 0, 0), transparent), url('../images/steven-spielberg-wallpaper.jpg');
     background-size: 6.6%;
     /* background-repeat: no-repeat; */
     /* background-position: center; */
     /* background-size: cover; */
 }
+
+::selection {
+    background: var(--gray10);
+}
+
+
+/* h3::after {
+    
+} */
