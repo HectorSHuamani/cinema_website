@@ -6,6 +6,7 @@
     --gray30: #494949;
     --gray40: #181a1b;
     --orange30: #FF9900; 
+    --orange40: #d6860ea7;
 }
 
 body {
@@ -77,6 +78,108 @@ summary {
 }
 
 ::selection {
-    background: var(--gray10);
+    background: var(--orange40);
 }
 
+.section_content h3 {
+    counter-increment: titlelist;
+}
+
+.section_content h3::before {
+    content: counter(titlelist, decimal); 
+}
+
+.soundtrack_parasite {
+    border: 3px;
+    height: 0px;
+    padding-bottom: 56.25% ;
+    position: relative;
+}
+
+.soundtrack_parasite iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.soundtrack_wrapper0 {
+    width: 50%;
+}
+
+.soundtrack_torino {
+    border: 3px;
+    height: 0px;
+    padding-bottom: 56.25% ;
+    position: relative;
+}
+
+.soundtrack_torino iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.soundtrack_wrapper1 {
+    width: 50%;
+}
+
+.soundtrack_chihiro {
+    border: 3px;
+    height: 0px;
+    padding-bottom: 56.25% ;
+    position: relative;
+}
+
+.soundtrack_chihiro iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.soundtrack_wrapper2 {
+    width: 50%;
+}
+
+.soundtrack_flew {
+    border: 3px;
+    height: 0px;
+    padding-bottom: 56.25% ;
+    position: relative;
+}
+
+.soundtrack_flew iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.soundtrack_wrapper3 {
+    width: 50%;
+}
+
+.soundtrack_retablo {
+    border: 3px;
+    height: 0px;
+    padding-bottom: 56.25% ;
+    position: relative;
+}
+
+.soundtrack_retablo iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.soundtrack_wrapper4 {
+    width: 50%;
+}
