@@ -48,6 +48,7 @@ h1 ~ p {
 }
 
 hr {
+    display: block;
     margin: 64px 0;
 }
 
@@ -67,8 +68,18 @@ h3 {
 }
 
 blockquote {
+    font-size: 24px;
     margin: 32px 0;
+    padding-left: 16px;
     
+ }
+
+ blockquote span {
+    color: var(--gray10);
+ }
+
+ blockquote span::before {
+    content: '-';
  }
 
 footer {
@@ -128,10 +139,11 @@ hr:before {
 
 .section_content h3 {
     counter-increment: titlelist;
+    padding-bottom: 4px;
 }
 
 .section_content h3::before {
-    content: counter(titlelist, decimal); 
+    content: counter(titlelist, decimal) '. ' ; 
 }
 
 .section_content img {
