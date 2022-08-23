@@ -71,6 +71,9 @@ blockquote {
     font-size: 24px;
     margin: 32px 0;
     padding-left: 16px;
+    /* border: 10px solid var(--orange30) */
+    line-height: 24px;
+    border-left: 4px solid var(--orange30);
     
  }
 
@@ -80,6 +83,33 @@ blockquote {
 
  blockquote span::before {
     content: '-';
+ }
+
+ .main {
+    border: 1px solid transparent;    
+ }
+
+ .wrapper {
+    width: 902px;
+    margin: auto;
+ }
+
+ .main-content {
+    padding: 20px;
+ }
+
+ .footer {
+    border: 1px solid transparent;
+    background-color: black;
+ }
+
+ .wrapper-footer {
+    width: 902px;
+    margin: auto;
+ }
+
+ .footer-content {
+    padding: 20px;
  }
 
 footer {
