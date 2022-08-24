@@ -9,10 +9,14 @@
     --orange40: #d6860ea7;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--gray1);
     background-color: var(--gray40);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -21,7 +25,13 @@ a {
 
 header {
     font-size: 14px;
+    width: 255px;
     color: var(--gray);
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 64px;
+    left: -270px;
+    z-index: -1;
 }
 
 header a {
@@ -33,14 +43,20 @@ header a:hover {
     color: var(--gray10);
 }
 
+header li {
+    margin-bottom: 16px;
+}
+
 nav details summary {
     font-weight: bold;
+    line-height: 24px;
 }
 
 h1 {
     font-size: 60px;
     margin-top: 64px;
     margin-bottom: 16px;
+    /* font-weight: normal; */
 }
 
 h1 ~ p {
@@ -65,6 +81,7 @@ h3 {
     color: var(--orange30);
     margin-top: 38px;
     margin-bottom: 12px;
+    position: relative;
 }
 
 blockquote {
@@ -85,22 +102,40 @@ blockquote {
     content: '-';
  }
 
- .main {
-    border: 1px solid transparent;    
+ /* .main {
+    border: 1px solid red;     
+    position: relative;
+ } */
+
+ .header {
+    position: sticky;
+    top: 0;
+ }
+
+ .header_content {
+    position: relative;
+    /* border: 1px solid red; */
  }
 
  .wrapper {
     width: 902px;
     margin: auto;
+    /* border: 1px solid green;     */
  }
 
- .main-content {
+ /* .main_content {
     padding: 20px;
- }
+    border: 10px solid black;
+ } */
 
  .footer {
-    border: 1px solid transparent;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
     background-color: black;
+    border-radius: 10px;
+    overflow: hidden;    
+    filter: drop-shadow(0 0 5px rgb(49,49,49));
  }
 
  .wrapper-footer {
@@ -133,11 +168,12 @@ summary {
 
 .hero {
     height: 350px;
-    background-image: linear-gradient(to top,rgb(0, 0, 0), transparent), url('../images/steven-spielberg-wallpaper.jpg');
+    background-image: linear-gradient(to top,rgb(0, 0, 0), transparent), url('../images/the_truman_show.jpg');
     background-size: 6.6%;
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-size: cover; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 ::selection {
@@ -162,18 +198,37 @@ hr:before {
   color: var(--orange30);
 }
 
+.section_content {
+    counter-reset: titleList;
+    padding: 4px;
+    /* border: 1px solid red; */
+}
 
-.selection_content ul li {
+.section_content ul li {
     margin-bottom: 16px;
 }
 
 .section_content h3 {
     counter-increment: titlelist;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
+    /* border: 1px solid white; */
 }
 
 .section_content h3::before {
-    content: counter(titlelist, decimal) '. ' ; 
+    content: counter(titlelist, decimal) '. '; 
+}
+
+.section_content h3::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--orange40);
+    display: inLine-block;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* border: 1px solid brown; */
 }
 
 .section_content img {
