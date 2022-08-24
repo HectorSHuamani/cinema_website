@@ -7,87 +7,94 @@
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <title>
             My Top Movies List
         </title>
     </head>
+
     <body>
         <div class="hero"></div>
-        
-        <header>
-            <nav>
-                <details open>
-                    <summary>
-                        Mi top 5 mejores películas
-                </summary>
-                <ol>
-                    <li>
-                        <a href="#parasite">Parasite</a> 
-                    </li>
-                    <li>
-                        <a href="#gran-torino">Gran Torino</a> 
-                    </li>
-                    <li>
-                        <a href="#viaje-de-chihiro">Viaje de Chihiro</a> 
-                    </li>
-                        <li>
-                            <a href="#one-flew-over-the-cuckoo's-nest">One Flew Over the Cuckoo's Nest</a>
-                        </li>
-                        <li>
-                            <a href="#retablo">Retablo</a>
-                        </li>
-                    </ol>
-                </details>
-            </nav>    
+    
+        <div class="header">
+            <div class="wrapper">
+                <div class="header_content">                                        
+                    <header>
+                        <nav>
+                            <details open>
+                                <summary>
+                                    Mi top 5 mejores películas
+                            </summary>
+                            <ol>
+                                <li>
+                                    <a href="#parasite">Parasite</a> 
+                                </li>
+                                <li>
+                                    <a href="#gran-torino">Gran Torino</a> 
+                                </li>
+                                <li>
+                                    <a href="#viaje-de-chihiro">Viaje de Chihiro</a> 
+                                </li>
+                                    <li>
+                                        <a href="#one-flew-over-the-cuckoo's-nest">One Flew Over the Cuckoo's Nest</a>
+                                    </li>
+                                    <li>
+                                        <a href="#retablo">Retablo</a>
+                                    </li>
+                                </ol>
+                            </details>
+                        </nav>                          
             
-
-            <nav>
-                <details>
-                    <summary>
-                        
-                        Sobre los Directores
-                        
-                    </summary>
-                    <ol>
-                        <li>
-                                <a href="#bong-joon-ho">Bong Joon-ho</a> 
-                            </li>
-                            <li>
-                                <a href="#clint-eastwood">Clint Eastwood</a>   
-                            </li>
-                            <li>
-                                <a href="#hayao-miyazaki">Hayao Miyazaki</a> 
-                            </li>
-                            <li>
-                                <a href="#milos-forman">Miloš Forman</a>
-                            </li>
-                            <li>
-                                <a href="#alvaro-delgado-aparicio-labarthe">Álvaro Delgado-Aparicio</a>
-                            </li>
-                        </ol>
-                </details>
-            </nav>
-        </header>
-            
-            <script>
-            const $detailsList = document.querySelectorAll('details')
-            $detailsList.forEach(($details) => {
-                $details.querySelector('summary').addEventListener('click', expand)
-            })
-            
-            function expand(){
-                $detailsList.forEach(($details) => {
-                    $details.removeAttribute('open')
-                })
-            }
-            </script>
-        
+                        <nav>
+                            <details>
+                                <summary>
+                                    
+                                    Sobre los Directores
+                                    
+                                </summary>
+                                <ol>
+                                    <li>
+                                            <a href="#bong-joon-ho">Bong Joon-ho</a> 
+                                        </li>
+                                        <li>
+                                            <a href="#clint-eastwood">Clint Eastwood</a>   
+                                        </li>
+                                        <li>
+                                            <a href="#hayao-miyazaki">Hayao Miyazaki</a> 
+                                        </li>
+                                        <li>
+                                            <a href="#milos-forman">Miloš Forman</a>
+                                        </li>
+                                        <li>
+                                            <a href="#alvaro-delgado-aparicio-labarthe">Álvaro Delgado-Aparicio</a>
+                                        </li>
+                                    </ol>                            
+                            </details>
+                        </nav>                    
+                    </header>  
+                        <script>
+                            const $detailsList = document.querySelectorAll('details')
+                            $detailsList.forEach(($details) => {
+                                $details.querySelector('summary').addEventListener('click', expand)
+                            })
+                            
+                            function expand(){
+                                $detailsList.forEach(($details) => {
+                                    $details.removeAttribute('open')
+                                })
+                            }
+                        </script>                                                            
+                </div>                    
+            </div>
+        </div>
+                            
         <main class="main">
             <div class="wrapper">
-                <div class="content">
+                <div class="main_content">
                     <h1>
-                        Las Películas que han marcado mi vida 
+                        LAS PELÍCULAS QUE HAN MARCADO MI VIDA 
                     </h1>
                     <p>
                         
@@ -101,10 +108,8 @@
                                 Héctor S. Huamaní
                             </span>
                         </p>
-                    </blockquote>
-        
-                    <section class="section_content">
-        
+                    </blockquote>        
+                    <section class="section_content">        
                         <h2>
                             Mi top 5 mejores películas
                         </h2>
@@ -237,9 +242,8 @@
                             </div>
                         </div>
                     </section>
-                    <hr>
-                    <section class="section_content_1">
-        
+                    
+                    <section class="section_content_1">        
                         <h2>
                             Datos sobre los Directores
                         </h2>
