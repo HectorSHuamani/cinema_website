@@ -31,8 +31,8 @@ header {
     color: var(--gray);
     position: absolute;
     /* border: 1px solid red; */
-    margin-block-start: 64px;
-    left: -270px;
+    inset-block-start: 0px;
+    inset-inline-start: -270px;
     z-index: -1;
 }
 
@@ -79,6 +79,10 @@ h2 {
     margin-top: 80px;
 }
 
+h2 ~ p {
+    text-align: justify;
+}
+
 h3 {
     font-size: 1.5em;
     color: var(--orange30);
@@ -121,7 +125,7 @@ blockquote {
 
  .header {
     position: sticky;
-    top: 0;
+    inset-block-start: 20px;
  }
 
  .header_content {
@@ -147,7 +151,7 @@ blockquote {
      padding: 30px 30px 20px 30px; 
      background-color: black;
      border-radius: 8px;
-     overflow: hidden;     
+     overflow: hidden;             
      /* filter: drop-shadow(0 0 5px rgb(138, 83, 0)); */
      /* margin-inline: 100px; */
      /* border: 1px solid red;*/
@@ -244,7 +248,7 @@ hr:before {
     width: 80px;
     height: 4px;
     background: var(--orange40);
-    display: inLine-block;
+    display: inline-block;
     /* border: 1px solid red; */
     position: absolute;
     left: 0;
@@ -368,5 +372,45 @@ hr:before {
 
 .soundtrack_wrapper4 {
     width: 50%;
+}
+
+/* .slider {
+    border: 1px solid yellow;
+} */
+
+.slider-container {
+    /* block-size: 100px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    overflow-x: hidden; 
+    margin-block-start: -10px;    
+    /* font-size: 0; */
+    /* border: 1px solid brown; */
+}
+
+.slider-slide {
+    margin: 0;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 100%;   
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    /* border: 1px solid purple; */
+    text-align: center;
+    margin-block-start: -30px;
+    margin-block-end: 30px;
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: var(--orange30);
+    border-radius: 50%;
 }
 
