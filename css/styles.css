@@ -17,6 +17,8 @@ body {
     color: var(--gray1);
     background-color: var(--gray40);
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    margin-inline: 100px;
 }
 
 a {
@@ -25,11 +27,11 @@ a {
 
 header {
     font-size: 14px;
-    width: 255px;
+    inline-size: 255px;
     color: var(--gray);
     position: absolute;
     /* border: 1px solid red; */
-    top: 64px;
+    margin-block-start: 64px;
     left: -270px;
     z-index: -1;
 }
@@ -86,12 +88,20 @@ h3 {
 
 blockquote {
     font-size: 24px;
-    margin: 32px 0;
-    padding-left: 16px;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    border-radius: 8px;
     /* border: 10px solid var(--orange30) */
-    line-height: 24px;
-    border-left: 4px solid var(--orange30);
-    
+    /* line-height: 24px;
+    border-left: 4px solid var(--orange30); */
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;    
+ }
+
+ blockquote p {
+    font-style:oblique;
  }
 
  blockquote span {
@@ -107,6 +117,7 @@ blockquote {
     position: relative;
  } */
 
+
  .header {
     position: sticky;
     top: 0;
@@ -118,38 +129,45 @@ blockquote {
  }
 
  .wrapper {
-    width: 902px;
+    max-inline-size: 902px;
     margin: auto;
     /* border: 1px solid green;     */
  }
 
- /* .main_content {
-    padding: 20px;
-    border: 10px solid black;
- } */
-
- .footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    background-color: black;
-    border-radius: 10px;
-    overflow: hidden;    
-    filter: drop-shadow(0 0 5px rgb(49,49,49));
+ .main_content {
+    padding-inline: 16px;
+    /* background: red; */
+    /* border: 10px solid black; */
  }
 
+ .footer {
+     display: flex;
+     flex-flow: row wrap; 
+     padding: 30px 30px 20px 30px; 
+     background-color: black;
+     border-radius: 8px;
+     overflow: hidden;     
+     /* filter: drop-shadow(0 0 5px rgb(138, 83, 0)); */
+     /* margin-inline: 100px; */
+     /* border: 1px solid red;*/
+ }
+
+
  .wrapper-footer {
-    width: 902px;
+    margin-inline: 902px;
     margin: auto;
+    /* border: 1px solid red; */
  }
 
  .footer-content {
     padding: 20px;
+    /* border: 1px solid red; */
  }
 
 footer {
     font-size: 14px;
     color: var(--gray);
+    /* border: 1px solid red; */
 }
 
 footer a {
@@ -159,10 +177,12 @@ footer a {
 
 footer a:hover {
     color: var(--gray10);
+    /* border: 1px solid red; */
 }
 
 summary {
-    color: var(--orange30)
+    color: var(--orange30);
+    /* border: 1px solid red; */
 }
 
 
@@ -232,7 +252,26 @@ hr:before {
 }
 
 .section_content img {
-    margin-bottom: 20px;
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;  
+}
+
+.section_content_1 img {
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+
+.section_content_2 img {
+    margin-block-start: 10px;
+    margin-block-end: 30px;
+    display: block;
+    max-inline-size: 100%;
+    /* border: 1px solid red; */
+    /* inline-size: 524px;
+    block-size: 280px; */
+    /* width="524" height="280" */
 }
 
 .soundtrack_parasite {
