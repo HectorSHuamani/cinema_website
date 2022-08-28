@@ -18,7 +18,6 @@ body {
     background-color: var(--gray40);
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    margin-inline: 100px;
 }
 
 a {
@@ -29,11 +28,11 @@ header {
     font-size: 14px;
     inline-size: 255px;
     color: var(--gray);
-    position: absolute;
+    margin-block-start: 60px;
     /* border: 1px solid red; */
-    inset-block-start: 0px;
+    /* inset-block-start: 0px;
     inset-inline-start: -270px;
-    z-index: -1;
+    z-index: -1; */
 }
 
 header a {
@@ -55,9 +54,9 @@ nav details summary {
 }
 
 h1 {
-    font-size: 60px;
-    margin-top: 64px;
-    margin-bottom: 16px;
+    font-size: 30px;
+    margin-block-start: 20px;
+    margin-block-end: 16px;
     text-align: center;
     /* font-weight: normal; */
 }
@@ -74,9 +73,9 @@ hr {
 
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 40px 0;
-    margin-top: 80px;
+    margin-block-start: 30px;
 }
 
 h2 ~ p {
@@ -120,18 +119,16 @@ blockquote {
  /* .main {
     border: 1px solid red;     
     position: relative;
+    width: 75%;
+    height: 80%;
  } */
 
 
- .header {
+ /* .header {
     position: sticky;
     inset-block-start: 20px;
- }
+ } */
 
- .header_content {
-    position: relative;
-    /* border: 1px solid red; */
- }
 
  .wrapper {
     max-inline-size: 902px;
@@ -192,7 +189,7 @@ summary {
 
 
 .hero {
-    height: 350px;
+    block-size: 100px;
     background-image: linear-gradient(to top,rgb(0, 0, 0), transparent), url('../images/the_truman_show.jpg');
     background-size: 6.6%;
     position: relative;
@@ -414,3 +411,37 @@ hr:before {
     border-radius: 50%;
 }
 
+@media screen and (min-width: 1366px){
+    .hero {
+        block-size: 350px;
+    }
+    .header {
+        position: sticky;
+        inset-block-start: 20px;
+     }
+    
+     .header_content {
+        position: relative;
+        padding: 0;
+     } 
+        
+     header {
+                   
+        font-size: 14px;
+        inline-size: 255px;
+        position: absolute;
+        inset-block-start: 0px;
+        inset-inline-start: -270px;
+        z-index: -1;
+     }
+
+     h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+     }
+
+     h2 {
+        font-size: 2em;
+        margin-block-start: 80px;
+    }
+}
