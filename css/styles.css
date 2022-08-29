@@ -292,7 +292,7 @@ hr:before {
 }
 
 .soundtrack_wrapper0 {
-    width: 50%;
+    inline-size: 100%;
 }
 
 .soundtrack_torino {
@@ -311,7 +311,7 @@ hr:before {
 }
 
 .soundtrack_wrapper1 {
-    width: 50%;
+    inline-size: 100%;
 }
 
 .soundtrack_chihiro {
@@ -330,7 +330,7 @@ hr:before {
 }
 
 .soundtrack_wrapper2 {
-    width: 50%;
+    inline-size: 100%;
 }
 
 .soundtrack_flew {
@@ -349,7 +349,7 @@ hr:before {
 }
 
 .soundtrack_wrapper3 {
-    width: 50%;
+    inline-size: 100%;
 }
 
 .soundtrack_retablo {
@@ -364,11 +364,11 @@ hr:before {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 100%;    
 }
 
 .soundtrack_wrapper4 {
-    width: 50%;
+    inline-size: 100%;
 }
 
 /* .slider {
